@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    font-family: cursive;
+    justify-content: center;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+}
+#quote{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 20px 0;
+}
+p{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #333;
+    margin: 20px 0;
+}
+a{
+    text-decoration: none;
+}
+li a{
+    color: #333;
+}
+table{
+    text-align: center;
+    margin: 0 auto;
+}
+
+li{
+    list-style: none;
+    font-size: 1.4rem;
+}
+#profpic{
+    width: 150px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333;
+    border-radius: 8%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.logo{
+    width: 75px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+.menu li:hover{
+    background-color: #e0b2b2e5;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.menu li{
+    padding: 5px 14px;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    user-select: none;
+}
+
+@media (max-width: 768px){
+    .menu{
+        display: none;
+        position:absolute;
+        background-color: #f5f5f5;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li:hover{
+        display: inline-block;
+        background-color: #e0b2b2e5;
+        transition: 01s ease;
+    }
+    .menu li+li{
+        margin-top: 12px;
+    }
+    input[type="checkbox"]:checked ~ .menu {
+        display: block;
+    }
+    .hamburger{
+        display: block;
+    }
+    .dropdown{
+        left: 50%;
+        top: 30px;
+        transform: translateX(-50%);
+        
+    }
+
+}
